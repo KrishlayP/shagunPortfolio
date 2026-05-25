@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
+import { motion } from 'framer-motion';
 import {
   ArrowUpRight,
   BarChart3,
@@ -7,7 +8,6 @@ import {
   BriefcaseBusiness,
   CheckCircle2,
   Database,
-  GraduationCap,
   Mail,
   MapPin,
   Menu,
@@ -89,6 +89,16 @@ const achievements = [
   'Completed certifications in IBM Data Analytics, Python, OOP, and DBMS.',
 ];
 
+const petals = Array.from({ length: 24 }, (_, index) => ({
+  id: index,
+  left: `${(index * 37) % 100}%`,
+  size: 10 + (index % 5) * 3,
+  delay: -(index * 0.75),
+  duration: 13 + (index % 7),
+  drift: index % 2 === 0 ? 72 + index * 3 : -64 - index * 2,
+  opacity: 0.34 + (index % 4) * 0.08,
+}));
+
 function useReveal() {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -125,6 +135,36 @@ function Reveal({ children, className = '', delay = 0 }) {
   );
 }
 
+function BlossomPetals() {
+  return (
+    <div className="petal-field" aria-hidden="true">
+      {petals.map((petal) => (
+        <motion.span
+          key={petal.id}
+          className="sakura-petal"
+          style={{
+            left: petal.left,
+            width: petal.size,
+            height: petal.size * 1.45,
+            opacity: petal.opacity,
+          }}
+          animate={{
+            y: ['-14vh', '116vh'],
+            x: [0, petal.drift * 0.35, petal.drift, petal.drift * 0.45],
+            rotate: [0, 95, 210, 340],
+          }}
+          transition={{
+            duration: petal.duration,
+            delay: petal.delay,
+            repeat: Infinity,
+            ease: 'linear',
+          }}
+        />
+      ))}
+    </div>
+  );
+}
+
 function App() {
   const [open, setOpen] = useState(false);
   const [activeProject, setActiveProject] = useState(0);
@@ -133,6 +173,7 @@ function App() {
 
   return (
     <main>
+      <BlossomPetals />
       <div className="ambient ambient-one" />
       <div className="ambient ambient-two" />
 
@@ -316,7 +357,7 @@ function App() {
         <Reveal className="contact-panel">
           <div>
             <p className="eyebrow">Contact</p>
-            <h2>Let’s build insight-led programs.</h2>
+            <h2>Let&apos;s build insight-led programs.</h2>
             <p>Available for analytics, program operations, reporting, and startup ecosystem coordination roles.</p>
           </div>
           <div className="contact-links">
