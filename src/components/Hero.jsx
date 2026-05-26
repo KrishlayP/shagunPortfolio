@@ -1,5 +1,5 @@
 import { ArrowUpRight, BriefcaseBusiness, Mail } from 'lucide-react';
-import profilePortrait from '../assets/profile-portrait.svg';
+import profilePortrait from '../assets/sh.png';
 import { profile } from '../data/portfolio';
 import { Reveal } from './Reveal';
 
