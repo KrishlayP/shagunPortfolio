@@ -222,11 +222,12 @@ p {
 }
 
 h1 {
-  max-width: 760px;
+  max-width: 960px;
   margin-bottom: 18px;
   color: #351327;
-  font-size: clamp(3rem, 8vw, 6.8rem);
-  line-height: 0.91;
+  font-size: clamp(4.35rem, 7.2vw, 6.35rem);
+  line-height: 0.94;
+  white-space: nowrap;
 }
 
 h2 {
@@ -710,6 +711,11 @@ li svg {
 
   .hero {
     padding-top: 112px;
+  }
+
+  h1 {
+    font-size: clamp(3.6rem, 13vw, 6rem);
+    white-space: normal;
   }
 
   .hero-card {
