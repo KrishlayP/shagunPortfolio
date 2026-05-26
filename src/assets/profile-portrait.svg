@@ -1,0 +1,24 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="256" fill="url(#bg)"/>
+  <circle cx="256" cy="204" r="82" fill="#FFF4FA"/>
+  <path d="M117 438c22-94 79-147 139-147s117 53 139 147c-38 36-86 58-139 58s-101-22-139-58Z" fill="#FFF4FA"/>
+  <path d="M145 197c10-77 58-130 118-130 54 0 96 37 108 92 13 4 25 13 31 25 18 34-7 78-47 80-7 0-13-1-19-3-22 36-57 57-96 57-46 0-86-29-105-75-23-7-37-27-34-49 3-28 26-47 44-47Z" fill="url(#hair)"/>
+  <path d="M183 176c44-6 79-26 103-58 20 31 45 52 75 64v45c0 67-39 116-91 116s-87-49-87-116v-51Z" fill="#FFE6F2"/>
+  <circle cx="218" cy="229" r="9" fill="#5C1E3F"/>
+  <circle cx="293" cy="229" r="9" fill="#5C1E3F"/>
+  <path d="M226 276c20 18 42 18 62 0" stroke="#C01776" stroke-width="12" stroke-linecap="round"/>
+  <path d="M393 120c19 4 33 21 32 41-18 4-37-4-47-21-9-16-7-34 5-48 5 10 6 19 10 28Z" fill="#FFD5E8" opacity=".88"/>
+  <path d="M121 130c17-11 40-8 54 8-8 20-28 31-49 27-18-4-31-17-35-35 12 4 20 5 30 0Z" fill="#FFEAF4" opacity=".9"/>
+  <path d="M365 379c19-8 41-1 52 16-11 18-33 26-53 18-17-7-28-23-28-41 11 7 19 11 29 7Z" fill="#FFD5E8" opacity=".85"/>
+  <defs>
+    <linearGradient id="bg" x1="91" y1="69" x2="421" y2="449" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF3D9F"/>
+      <stop offset=".58" stop-color="#FF7A9D"/>
+      <stop offset="1" stop-color="#FFB25F"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="120" y1="71" x2="391" y2="302" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4B1737"/>
+      <stop offset="1" stop-color="#8D155D"/>
+    </linearGradient>
+  </defs>
+</svg>

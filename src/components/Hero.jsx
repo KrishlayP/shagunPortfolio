@@ -1,4 +1,5 @@
 import { ArrowUpRight, BriefcaseBusiness, Mail } from 'lucide-react';
+import profilePortrait from '../assets/profile-portrait.svg';
 import { profile } from '../data/portfolio';
 import { Reveal } from './Reveal';
 
@@ -31,7 +32,7 @@ export function Hero() {
       <Reveal className="hero-card" delay={240}>
         <div className="portrait-orbit">
           <div className="portrait">
-            <span>S</span>
+            <img src={profilePortrait} alt="Shagun Bajpai portrait" />
           </div>
           <div className="orbit-dot dot-a" />
           <div className="orbit-dot dot-b" />
